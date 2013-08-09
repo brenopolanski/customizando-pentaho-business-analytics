@@ -14,7 +14,7 @@ O Pentaho User Console é a interface Web padrão para o Pentaho Business Analyt
 
 #### MantleSettings.properties
 
-**Localização:** /pentaho/server/biserver-ee/tomcat/webapps/pentaho/WEB-INF/lib/mantle-4.8.0-GA.jar
+**Localização:** /pentaho/server/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/mantle-4.8.0-GA.jar
 
 Este arquivo é armazenado no pacote JAR acima listado no Pentaho WAR. Você deve abrir o JAR com um utilitário de arquivo ZIP, em seguida, navegue até */org/pentaho/mantle/server/*. Não importa como você irá extrair e editar o arquivo, ele deve ser colocado de volta no JAR quando for modificado. É recomenda o uso **7-Zip** para este processo, use seu editor de códido preferido, em seguida, faça suas modificações no arquivo.
 
@@ -22,7 +22,7 @@ O arquivo MantleSettings.properties contém configurações para a barra de menu
 
 #### MantleStyle.css
 
-**Localização:** /pentaho/server/biserver-ee/tomcat/webapps/pentaho/mantle/MantleStyle.css
+**Localização:** /pentaho/server/biserver-ce/tomcat/webapps/pentaho/mantle/MantleStyle.css
 
 Esta é a folha de estilo CSS do Pentaho User Console. Ele herda alguns elementos do arquivo widgets.css no mesmo diretório, você pode precisar dele também.
 
@@ -52,11 +52,11 @@ Esta é a folha de estilo do tema alternativo, para o console de usuário Pentah
 
 Esses diretórios contêm folhas de estilo para cada ferramenta cliente BA Server.
 
-**Analyzer location:** */biserver-ee/pentaho-solutions/system/analyzer/styles/themes/*
+**Analyzer location:** */biserver-ce/pentaho-solutions/system/analyzer/styles/themes/*
 
-**Interactive Reporting location:** */biserver-ee/pentaho-solutions/system/pentaho-interactive-reporting/resources/web/themes/*
+**Interactive Reporting location:** */biserver-ce/pentaho-solutions/system/pentaho-interactive-reporting/resources/web/themes/*
 
-**Dashboard Designer location:** */biserver-ee/pentaho-solutions/system/dashboards/themes/*
+**Dashboard Designer location:** */biserver-ce/pentaho-solutions/system/dashboards/themes/*
 
 ### Substituindo o conjundo de ícones padrão
 
@@ -68,7 +68,7 @@ Se você editar um pacote de imagem, você deve ter certeza de preservar a sua l
 
 O logotipo Pentaho exibido no canto superior direito da Pentaho User Console pode ser substituído ou desativado de acordo com suas necessidades. Para desabilidar o logotipo, altere o arquivo **MantleSettings.properties** explicação acima.
 
-O logotipo padrão é: */pentaho/server/biserver-ee/tomcat/webapps/pentaho/mantle/themes/onyx/images/logo.png*, o logotipo padrão Pentaho tem um fundo transparente. Se você quiser modificar ou substituir o logotipo, você deve manter o nome do arquivo e tamanho da imagem, que é 152x75 pixels.
+O logotipo padrão é: */pentaho/server/biserver-ce/tomcat/webapps/pentaho/mantle/themes/onyx/images/logo.png*, o logotipo padrão Pentaho tem um fundo transparente. Se você quiser modificar ou substituir o logotipo, você deve manter o nome do arquivo e tamanho da imagem, que é 152x75 pixels.
 
 Se você quiser alterar o tamanho do logotipo, você pode alterar a classe CSS **.puc-logo-spacer** em **mantleOnyx.css** para usar diferentes dimensões:
 
@@ -95,7 +95,7 @@ A interface gráfica do Pentaho User Console é construído sobre um motor de te
 
 O tema baseado em CSS3 permite que você mude o visual de suas ferramentas do Business Analytics Server e adicione seus próprios temas. Pode ser feito através do trabalho com apenas alguns arquivos de configuração chaves.
 
-As folhas de estilo que compõem o Pentaho User Console, o Dashboard Designer, Analyzer e Interactive Reporting são na sua maioria em um único local. Coletivamente, esses estilos e scripts compreendem o tema padrão do sistema **Onyx**. Este tema está localizado no diretório UI plugin em */pentaho/server/biserver-ee/pentaho-solutions/system/common-ui/resources/themes*.
+As folhas de estilo que compõem o Pentaho User Console, o Dashboard Designer, Analyzer e Interactive Reporting são na sua maioria em um único local. Coletivamente, esses estilos e scripts compreendem o tema padrão do sistema **Onyx**. Este tema está localizado no diretório UI plugin em */pentaho/server/biserver-ce/pentaho-solutions/system/common-ui/resources/themes*.
 
 Existem dois tipos de temas: do **sistema** e **local**. Temas do sistema fornecem estilos e scripts comuns que se aplicam a todo Business Analytics Server. Por exemplo, os botões são definidos no tema padrão do sistema Onyx. Temas locais são definidos para uma determinada área ou "contexto" do servidor de BI. Contextos incluem plugins do Servidor Business Analytics, bem como os nomes dos diretórios de nível superior no Pentaho WAR. Recursos para temas locais só terão efeito em sua área específica do servidor de BI.
 
