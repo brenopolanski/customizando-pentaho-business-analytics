@@ -54,7 +54,7 @@ Esses diretórios contêm folhas de estilo para cada ferramenta cliente BA Serve
 
 **Analyzer location:** */biserver-ee/pentaho-solutions/system/analyzer/styles/themes/*
 
-**Interactive Reporting location:** */biserver-ee/pentaho-solutions/system/pentaho-inte**ractive-reporting/resources/web/themes/*
+**Interactive Reporting location:** */biserver-ee/pentaho-solutions/system/pentaho-interactive-reporting/resources/web/themes/*
 
 **Dashboard Designer location:** */biserver-ee/pentaho-solutions/system/dashboards/themes/*
 
@@ -74,7 +74,7 @@ Se você quiser alterar o tamanho do logotipo, você pode alterar a classe CSS *
 
 <pre>
 .puc-logo-spacer {
-  width: 152px;
+	width: 152px;
 	height: 75px;
 }
 </pre>
@@ -115,8 +115,6 @@ Quando o tema **Autumn** estiver ativo, é adicionado à página HTML:
 
 Esta inserção de recursos faz com que seja possível alterar os temas sem ter que editar os principais documentos HTML. Você pode incluir vários arquivos JavaScript e CSS para o seu tema.
 
-You can add local styles in a similar fashion. The only requirement is that you tell the system what context you need to load. This is done by adding **?context=myPlugin** to the **webcontext.js** script where **myPlugin** is the name of your plugin or root WAR folder:
-
 Você pode adicionar estilos locais de uma forma similar. A única exigência é que você deve dizer ao sistema que contexto você precisa carregar. Isto é feito através da adição **?context=myPlugin** em **webcontext.js** script **myPlugin** é o nome do seu plugin ou a pasta raiz do WAR:
 
     <script type=”text/javascript” src=”webContext.js?context=myPlugin”></script>
@@ -146,8 +144,6 @@ Carregamento de plugin de recursos é diferente do que WAR-based, ele controla a
 É mais fácil e rápido desenvolver um novo tema, baseando-se no tema padrão do Onyx. Cada estilo definido no arquivo **mainStyles.css** é usado em algum lugar do Business Analytics Server. Onyx também contém vários arquivos de script, como por exemplo JScrollPane, barra de rolagem do jQuery. Esses scripts substitui as barras de rolagem do navegador nativo com versões personalizáveis ​​DHTML.
 
 ### Definindo um Tema Padrão
-
-The default system theme is defined in the */pentaho-solutions/system/pentaho.xml* configuration file through the **default-theme** node. The Business Analytics Server ships with **onyx** as the default theme; changing the value to another theme name will set the default active theme for all User Console users.
 
 O tema padrão do sistema é definido no arquivo de configuração */pentaho-solutions/system/pentaho.xml* através do **default-theme**. O Business Analytics Server vem com **onyx** como o tema padrão, alterando o valor para um outro nome de tema, irá definir o tema ativo padrão para todos os usuários do Pentaho User Console.
 
